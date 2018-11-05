@@ -1,100 +1,93 @@
-Johnny Coder
+Jan Fabián
 ============
 
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+>  Trust in God, but keep your powder dry.
 
 ----
 
 Education
 ---------
 
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
+2012-2015
+:   **Master - Faculty of Electrical Engineering** (Prague) - Open Informatics
 
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
+    Specialization in Computer Vision
 
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
+    *Thesis title: Person body height measurement by using surveillance cameras*
 
-    *Minor: Awesomeology*
+2009-2012
+:   **Bachelor - Faculty of Electrical Engineering** (Prague) - Open Informatics
 
-Experience
+    *Minor: Specialization in Software Development*
+
+Work Experience
 ----------
 
-**Your Most Recent Work Experience:**
+2015-2018
+:   **Topmonks**
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+    *Node.js, MongoDB, AWS, Docker Swarm, Java, Apache Camel*
 
-* First item
+    I spent last three years in the company called [TopMonks](http://topmonks.com). I started as a consultant implementing custom integration of the pricing software [PriceFx](http://pricefx.eu). PriceFx startup was then acquired and I moved into a newly created app mobile team. We built applications using React Native - GraphQL - Node.js - MongoDB stack.
+    We used Docker Cloud for continous deployment, after its termination we moved to our custom
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
+2015
+:   **STRV**
 
-**That Other Job You Had**
+    *Ember.js, Backbone.js*
 
-Also with a short description.
+    My first job after finishing University, I started in STRV on a position of a frontend developer, mainly programming interactive promo pages for mobile applications.
 
-Technical Experience
+
+Projects overview
 --------------------
 
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
+EVE
+:   *React.js web application*
 
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
+    *Project description*
 
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
+    *New technologies/frameworks learnt on this project*
 
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
+    * CircleCI
+    * Ava.js
 
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
+[Ingrid](https://www.ingridapp.io)
+:   *Web application + React Native mobile application*
+:   *New technologies/frameworks learnt on this project*
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
+    * MongoDB optimization and indexation
+    * AWS CloudWatch
+    * Redis Queue using [Bull](https://optimalbits.github.io/bull/)
+    * Docker Swarm
+    * AWS EC2
+    * AWS VPC
 
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+[2Pocket](https://www.2pocket.com)
+:   *Web application + React Native mobile application*
+:   *New technologies/frameworks learnt on this project*
 
-[ref]: https://github.com/githubuser/superlongprojectname
+    * Travis
+    * Koa.js
+    * JWT authorization concept
+    * Mocha + Chai testing frameworks
+    * GraphQL
+    * AWS S3
+    * AWS Route53
 
-Extra Section, Call it Whatever You Want
+Misc
 ----------------------------------------
 
-* Human Languages:
+* Languages:
 
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
+     * Czech (native speaker)
+     * English
+     * German
 
-* Random tidbit
-
-* Other sort of impressive-sounding thing you did
+* (Github)[https://github.com/janfabian]
 
 ----
 
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+> <mail@janfabian.cz> • +420 777 872 077 • 30 years old\
