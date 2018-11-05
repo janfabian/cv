@@ -12,6 +12,7 @@ jobs:
             - TARGET_BRANCH: gh-pages
             - GH_EMAIL: mail@janfabian.cz
             - GH_NAME: CircleCI-janfabian
+            - DOMAIN: www.janfabian.cz
         steps:
             - checkout
             - setup_remote_docker:
@@ -19,10 +20,8 @@ jobs:
             - run:
                 name: Create output folder with resume.html
                 command: |
-                    docker create -v ~ --name project alpine:3.4 /bin/true
-                    docker cp . project:/project
                     docker build -t resume-make -f .docker/resume.dockerfile .
-                    docker run -it --volumes-from project --name resume resume-make make
+                    docker run -it --name resume resume-make make
                     docker cp resume:/home/app/resume/output ~/output
             - deploy:
                 name: Deploy
@@ -39,6 +38,7 @@ jobs:
                       cd ..
 
                       cp -a ~/output/resume.html out/index.html
+                      printf $DOMAIN > out/CNAME
 
                       mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
                       cd out
