@@ -10,6 +10,8 @@ jobs:
         environment:
             - SOURCE_BRANCH: master
             - TARGET_BRANCH: gh-pages
+            - GH_EMAIL: mail@janfabian.cz
+            - GH_NAME: CircleCI - janfabian
         steps:
             - checkout
             - setup_remote_docker:
