@@ -6,6 +6,7 @@ jobs:
         branches:
             ignore:
                 - gh-pages
+        working_directory: ~/project
         environment:
             - SOURCE_BRANCH: master
             - TARGET_BRANCH: gh-pages
@@ -15,7 +16,12 @@ jobs:
                 docker_layer_caching: true
             - run:
                 name: Create output folder with resume.html
-                command: docker-compose up -d
+                command: |
+                    docker create -v ~ --name project alpine:3.4 /bin/true
+                    docker cp . project:/project
+                    docker build -t resume-make -f .docker/resume.dockerfile .
+                    docker run -it --volumes-from project --name resume resume-make make
+                    docker cp resume:/home/app/resume/output ~/output
             - deploy:
                 name: Deploy
                 command: |
@@ -30,7 +36,7 @@ jobs:
                       git rm -rf .
                       cd ..
 
-                      cp -a output/resume.html out/index.html
+                      cp -a ~/output/resume.html out/index.html
 
                       mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
                       cd out
