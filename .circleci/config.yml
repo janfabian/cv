@@ -2,7 +2,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: docker:18
+            - image: circleci/buildpack-deps:18.10
         branches:
             ignore:
                 - gh-pages
