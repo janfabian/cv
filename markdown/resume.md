@@ -3,7 +3,7 @@ Jan Fabián
 
 ----
 
->  Trust in God, but keep your powder dry.
+>  Node.js developer
 
 ----
 
@@ -45,20 +45,27 @@ Projects overview
 --------------------
 
 EVE
-:   *React.js web application*
+:   *4 months, React.js web application*
 
-    *Project description*
+    EVE is a project done in cooperation with the [Expando](https://expan.do/) team. The motivation behind EVE is to allow online-store owners to expand and offer their products on the Amazon Marketplace. We built MVP enabling users to import Google Product Feed or Shopify products and spread these products across selected Amazon Marketplaces.
 
     *New technologies/frameworks learnt on this project*
 
+    * Node.js Stream API
     * CircleCI
     * Ava.js
+    * Amazon MWS API
+    * Shopify GraphQL API
+    * Using automated bot scripts [Dependabot](https://dependabot.com/), [Codecov](https://codecov.io/) in build pipeline
 
 [Ingrid](https://www.ingridapp.io)
-:   *Web application + React Native mobile application*
-:   *New technologies/frameworks learnt on this project*
+:   *14 months, Web application + React Native mobile application*
 
-    * MongoDB optimization and indexation
+    The Ingrid mobile app engages employees and helps to collect ideas in a company. Apart from the app backend, I developed the Admin interface for team leaders, which allows them to check current activities, leaderboards or latest ideas from their colleagues.
+
+    *New technologies/frameworks learnt on this project*
+
+    * MongoDB optimization and indexing
     * AWS CloudWatch
     * Redis Queue using [Bull](https://optimalbits.github.io/bull/)
     * Docker Swarm
@@ -66,8 +73,11 @@ EVE
     * AWS VPC
 
 [2Pocket](https://www.2pocket.com)
-:   *Web application + React Native mobile application*
-:   *New technologies/frameworks learnt on this project*
+:   *12 months, Web application + React Native mobile application*
+
+    The 2Pocket app was the initial one where we used React Native - GraphQL - Node.js stack. 2Pocket is a mobile waiter, you can order and pay with it. We had to build Manager web UI to integrate menu items. Paying with a card is provided by CSOB Paygate.
+
+    *New technologies/frameworks learnt on this project*
 
     * Travis
     * Koa.js
@@ -76,9 +86,12 @@ EVE
     * GraphQL
     * AWS S3
     * AWS Route53
+    * [CSOB Paygate](https://platebnibrana.csob.cz/)
 
 Misc
 ----------------------------------------
+
+* Location: Prague
 
 * Languages:
 
@@ -86,7 +99,7 @@ Misc
      * English
      * German
 
-* (Github)[https://github.com/janfabian]
+* [Github](https://github.com/janfabian)
 
 ----
 
