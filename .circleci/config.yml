@@ -39,6 +39,8 @@ jobs:
 
                       cp -a ~/output/resume.html out/index.html
                       cp -a ~/output/resume.pdf out/index.pdf
+                      cp -a ~/output/resume.docx out/index.docx
+                      cp -a ~/output/resume.rtf out/index.rtf
 
                       mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
                       cd out
