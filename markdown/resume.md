@@ -90,4 +90,4 @@ Misc
 
 ----
 
-> <mail@janfabian.cz> • +420 777 872 077 • 30 years old\
+> <mail@janfabian.cz> • +420 777 872 077 • 29 years old\

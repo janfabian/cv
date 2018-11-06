@@ -12,7 +12,6 @@ jobs:
             - TARGET_BRANCH: gh-pages
             - GH_EMAIL: mail@janfabian.cz
             - GH_NAME: CircleCI-janfabian
-            - DOMAIN: www.janfabian.cz
         steps:
             - checkout
             - setup_remote_docker:
@@ -35,10 +34,11 @@ jobs:
                       cd out
                       git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
                       git rm -rf .
+                      git checkout master -- CNAME
                       cd ..
 
                       cp -a ~/output/resume.html out/index.html
-                      printf $DOMAIN > out/CNAME
+                      cp -a ~/output/resume.pdf out/index.pdf
 
                       mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
                       cd out
