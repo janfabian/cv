@@ -11,6 +11,13 @@ Jan Fabián
 Work Experience
 ----------
 
+2018-Present 
+:   **McKinsey&Company**
+
+    *TypeScript, ReasonML, React.js, PostgreSQL*
+
+    I'm currently employed  at McKinsey&Company. It's still mainly consulting firm, but as part of the innovation process, it offers to its clients technical solutions for all the different industry fields. I'm part of the team responsible for common services used by those solutions. 
+
 2015-2018
 :   **TopMonks**
 
@@ -96,7 +103,7 @@ Interest
 IT
 
 :   * Golang *(I'm going through the Go track on the [Exercism](https://exercism.io/tracks/go))*
-    * Kubernetes *(I prepare for the CKA exam planned for 12/2018)*
+    * Kubernetes *(I prepare for the CKA exam planned for 07/2019)*
     * Google Cloud Platform *(I use GCP to deploy my development k8s cluster)*
 
 
