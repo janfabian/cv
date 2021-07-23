@@ -67,6 +67,7 @@ jobs:
             - run: docker build -t resume-make -f .docker/resume.dockerfile .
             - run: docker run --name resume resume-make make
             - run: docker cp resume:/home/app/resume/output ~/output
+            - run: mkdir -p out
             - run: cp -a ~/output/resume.html out/index.html
             - run: cp -a ~/output/resume.pdf out/index.pdf
             - run: cp -a ~/output/resume.docx out/index.docx
