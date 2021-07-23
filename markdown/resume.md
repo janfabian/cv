@@ -13,7 +13,7 @@ Work Experience
 2019-Present
 :   **TOPMONKS**
 
-    *React, Firebase, AWS*
+    *Node.js, React, Firebase, AWS*
 
     Return back to the scene of the crime.
 
@@ -29,7 +29,7 @@ Work Experience
 
     *Node.js, MongoDB, AWS, Docker Swarm, Java, Apache Camel*
 
-    I spent last three years in the company called [TOPMONKS](http://TOPMONKS.com). I started as a consultant implementing custom integration of the pricing software [PriceFx](http://pricefx.eu). PriceFx startup was then acquired and I moved into a newly created mobile-apps development team. We've built applications using React Native - GraphQL - Node.js - MongoDB stack.
+    I spent three years in [TOPMONKS](http://TOPMONKS.com). I started as a consultant implementing custom integration of the pricing software [PriceFx](http://pricefx.eu). PriceFx startup was then acquired and I moved into a newly created mobile-apps development team. We've built applications using React Native - GraphQL - Node.js - MongoDB stack.
     We used Docker Cloud for continous deployment, after its termination we moved to our own Docker Swarm cluster running on EC2 instances.
 
 2015
@@ -46,7 +46,7 @@ Work Projects overview
 [OM Platform](https://app.omplatform.cz/)
 :   *TOPMONKS, 4 months, Firebase React app *
 
-    Web Application for companies to raise money via investment rounds. 
+    Web Application for companies to raise money via public investment rounds. 
 
     *Technologies/frameworks used in this project*
 
@@ -70,7 +70,7 @@ Travelport
     * Postman documentation
 
 EVE
-:   *TOPMONKS, 4 months, React.js web application*
+:   *TOPMONKS, 4 months, React web application*
 
     EVE is a project created in cooperation with the [Expando](https://expan.do/) team. The motivation behind EVE is allowing online-store owners to expand and offer their products on the Amazon Marketplace. We built MVP enabling users to import either Google Product Feed or Shopify products and spread these products across selected Amazon Marketplaces.
 
