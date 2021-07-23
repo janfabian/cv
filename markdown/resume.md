@@ -13,7 +13,7 @@ Work Experience
 2019-Present
 :   **TOPMONKS**
 
-    *Node.js, React, Typescript, Firebase, AWS*
+    *Node.js, React, TypeScript, Firebase, AWS*
 
     Return back to the scene of the crime.
 
