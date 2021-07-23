@@ -66,7 +66,7 @@ jobs:
 
             - run: |
                   docker build -t resume-make -f .docker/resume.dockerfile .
-                  docker run -it --name resume resume-make make
+                  docker run --name resume resume-make make
                   docker cp resume:/home/app/resume/output ~/output
             - run: |
                   cp -a ~/output/resume.html out/index.html
