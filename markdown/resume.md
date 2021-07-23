@@ -3,27 +3,33 @@ Jan Fabián
 
 ----
 
->  Node.js developer \
->  I'm keen on exploring DevOps field and Golang
+>  Full-stack developer \
 
 ----
 
 Work Experience
 ----------
 
-2018-Present 
+2019-Present
+:   **TOPMONKS**
+
+    *React, Firebase, AWS*
+
+    Return back to the scene of the crime.
+
+2018-2019 
 :   **McKinsey&Company**
 
-    *TypeScript, ReasonML, React.js, PostgreSQL*
+    *TypeScript, ReasonML, React, PostgreSQL*
 
-    I'm currently employed  at McKinsey&Company. It's still mainly consulting firm, but as part of the innovation process, it offers to its clients technical solutions for all the different industry fields. I'm part of the team responsible for common services used by those solutions. 
+    I was part of the team responsible for common services used by internal analytic solutions. 
 
 2015-2018
-:   **TopMonks**
+:   **TOPMONKS**
 
     *Node.js, MongoDB, AWS, Docker Swarm, Java, Apache Camel*
 
-    I spent last three years in the company called [TopMonks](http://topmonks.com). I started as a consultant implementing custom integration of the pricing software [PriceFx](http://pricefx.eu). PriceFx startup was then acquired and I moved into a newly created mobile-apps development team. We've built applications using React Native - GraphQL - Node.js - MongoDB stack.
+    I spent last three years in the company called [TOPMONKS](http://TOPMONKS.com). I started as a consultant implementing custom integration of the pricing software [PriceFx](http://pricefx.eu). PriceFx startup was then acquired and I moved into a newly created mobile-apps development team. We've built applications using React Native - GraphQL - Node.js - MongoDB stack.
     We used Docker Cloud for continous deployment, after its termination we moved to our own Docker Swarm cluster running on EC2 instances.
 
 2015
@@ -37,12 +43,38 @@ Work Experience
 Work Projects overview
 --------------------
 
-[EVE](https://eve.prod.tmcloud.io)
-:   *TopMonks, 4 months, React.js web application*
+[OM Platform](https://app.omplatform.cz/)
+:   *TOPMONKS, 4 months, Firebase React app *
 
-    EVE is a project done in cooperation with the [Expando](https://expan.do/) team. The motivation behind EVE is to allow online-store owners to expand and offer their products on the Amazon Marketplace. We built MVP enabling users to import Google Product Feed or Shopify products and spread these products across selected Amazon Marketplaces.
+    Web Application for companies to raise money via investment rounds. 
 
-    *New technologies/frameworks I learnt on this project*
+    *Technologies/frameworks used in this project*
+
+    * Firebase APIs (Auth, Firestore, Functions)
+    * React
+    * RxJS
+    * MaterialUI
+
+Travelport
+:   *TOPMONKS, 12 months, Serverless API*
+
+    Scope of this project was creating an API for corporate booking tool. The API was documented via Postman.
+
+    *Technologies/frameworks used in this project*
+
+    * Serverless framework
+    * Typescript 
+    * AWS Api Gateway
+    * AWS DynamoDB
+    * AWS StepFunctions
+    * Postman documentation
+
+EVE
+:   *TOPMONKS, 4 months, React.js web application*
+
+    EVE is a project created in cooperation with the [Expando](https://expan.do/) team. The motivation behind EVE is allowing online-store owners to expand and offer their products on the Amazon Marketplace. We built MVP enabling users to import either Google Product Feed or Shopify products and spread these products across selected Amazon Marketplaces.
+
+    *Technologies/frameworks used in this project*
 
     * Node.js Stream API
     * CircleCI
@@ -52,11 +84,11 @@ Work Projects overview
     * Using automated bot scripts [Dependabot](https://dependabot.com/), [Codecov](https://codecov.io/) in build pipeline
 
 [Ingrid](https://www.ingridapp.io)
-:   *TopMonks, 14 months, Web application + React Native mobile application*
+:   *TOPMONKS, 14 months, Web application + React Native mobile application*
 
     The Ingrid mobile app engages employees and helps to collect ideas in a company. Apart from the app backend, I developed the Admin interface for team leaders, which allows them to check current activities, leaderboards or latest ideas from their colleagues.
 
-    *New technologies/frameworks I learnt on this project*
+    *Technologies/frameworks used in this project*
 
     * MongoDB optimization and indexing
     * AWS CloudWatch
@@ -66,11 +98,11 @@ Work Projects overview
     * AWS VPC
 
 [2Pocket](https://www.2pocket.com)
-:   *TopMonks, 12 months, Web application + React Native mobile application*
+:   *TOPMONKS, 12 months, Web application + React Native mobile application*
 
     The 2Pocket app was the initial one where we used React Native - GraphQL - Node.js stack. 2Pocket is a mobile waiter, you can order and pay with it. We had to build Manager web UI to integrate menu items. Paying with a card is provided by CSOB Paygate.
 
-    *New technologies/frameworks I learnt on this project*
+    *Technologies/frameworks used in this project*
 
     * GraphQL
     * Koa.js
@@ -97,27 +129,10 @@ Education
     *Minor: Specialization in Software Development*
 
 
-Interest
-----------------------------------------
-
-IT
-
-:   * Golang *(I'm going through the Go track on the [Exercism](https://exercism.io/tracks/go))*
-    * Kubernetes *(I prepare for the CKA exam planned for 07/2019)*
-    * Google Cloud Platform *(I use GCP to deploy my development k8s cluster)*
-
-
-Others
-:   Czech classic literature book collections; my favourite writer is Vladislav Vancura, whose pieces representing poem in prose for me.
-
-    Running with drum and bass in my ears
-
-    Freestyle rap and frestyle fairy tails telling for my son
-
 Misc
 ----------------------------------------
 
-* Location: Prague
+* Location: Hradec Králové
 
 * Languages:
 
@@ -135,4 +150,4 @@ Thank you for reaching this point in my CV. I consider important to state my per
 
 ----
 
-> <mail@janfabian.cz> • +420 777 872 077 • 29 years old\
+> <mail@janfabian.cz> • +420 777 872 077 • 31 years old\
