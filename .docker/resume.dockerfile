@@ -4,6 +4,8 @@ FROM ubuntu
 RUN useradd --user-group --create-home --shell /bin/false app
 
 ENV TZ=Europe/Prague
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 ENV HOME=/home/app
 WORKDIR $HOME
 
