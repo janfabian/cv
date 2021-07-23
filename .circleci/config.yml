@@ -4,49 +4,48 @@ jobs:
         docker:
             - image: circleci/buildpack-deps:18.10
         branches:
-            ignore:
-                - gh-pages
+            ignore: gh-pages
         working_directory: ~/project
         environment:
-            - SOURCE_BRANCH: master
-            - TARGET_BRANCH: gh-pages
-            - GH_EMAIL: mail@janfabian.cz
-            - GH_NAME: CircleCI-janfabian
+            SOURCE_BRANCH: master
+            TARGET_BRANCH: gh-pages
+            GH_EMAIL: mail@janfabian.cz
+            GH_NAME: CircleCI-janfabian
         steps:
             - checkout
             - setup_remote_docker:
-                docker_layer_caching: true
+                  version: 19.03.13
             - run:
-                name: Create output folder with resume.html
-                command: |
-                    docker build -t resume-make -f .docker/resume.dockerfile .
-                    docker run -it --name resume resume-make make
-                    docker cp resume:/home/app/resume/output ~/output
+                  name: Create output folder with resume.html
+                  command: |
+                      docker build -t resume-make -f .docker/resume.dockerfile .
+                      docker run -it --name resume resume-make make
+                      docker cp resume:/home/app/resume/output ~/output
             - deploy:
-                name: Deploy
-                command: |
-                    if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
-                      git config --global user.email $GH_EMAIL
-                      git config --global user.name $GH_NAME
+                  name: Deploy
+                  command: |
+                      if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
+                        git config --global user.email $GH_EMAIL
+                        git config --global user.name $GH_NAME
 
-                      git clone $CIRCLE_REPOSITORY_URL out
+                        git clone $CIRCLE_REPOSITORY_URL out
 
-                      cd out
-                      git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
-                      git rm -rf .
-                      git checkout master -- CNAME
-                      cd ..
+                        cd out
+                        git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+                        git rm -rf .
+                        git checkout master -- CNAME
+                        cd ..
 
-                      cp -a ~/output/resume.html out/index.html
-                      cp -a ~/output/resume.pdf out/index.pdf
-                      cp -a ~/output/resume.docx out/index.docx
-                      cp -a ~/output/resume.rtf out/index.rtf
+                        cp -a ~/output/resume.html out/index.html
+                        cp -a ~/output/resume.pdf out/index.pdf
+                        cp -a ~/output/resume.docx out/index.docx
+                        cp -a ~/output/resume.rtf out/index.rtf
 
-                      mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
-                      cd out
+                        mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
+                        cd out
 
-                      git add -A
-                      git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
+                        git add -A
+                        git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
 
-                      git push origin $TARGET_BRANCH
-                    fi
+                        git push origin $TARGET_BRANCH
+                      fi
