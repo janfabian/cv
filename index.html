@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>CV</title>
+  <style>
+    :root { --accent: #397249; --rule: #9cb770; --muted: #757575; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.45;
+      color: #222;
+      background: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    h1 { font-size: 44px; color: var(--muted); text-align: center; margin: 0 0 4px; font-weight: 400; }
+    .tagline { text-align: center; margin: 0 0 24px; color: var(--muted); }
+    .pdf { text-align: center; margin: 0 0 24px; font-size: 14px; }
+    h2 { color: var(--accent); margin: 28px 0 12px; font-size: 22px; display: flex; align-items: center; gap: 10px; }
+    h2::before { content: ""; flex: 0 0 16%; height: 10px; background: var(--rule); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .entry { display: grid; grid-template-columns: 17% 1fr; gap: 0 12px; margin-bottom: 16px; break-inside: avoid; }
+    .when { color: var(--muted); }
+    .entry h3 { font-size: 16px; margin: 0 0 2px; }
+    .tech { font-style: italic; margin: 0 0 6px; }
+    p { margin: 0 0 6px; }
+    ul { margin: 4px 0 0; padding-left: 20px; }
+    .values { list-style: none; padding: 0; font-style: italic; }
+    @media (max-width: 560px) {
+      h1 { font-size: 34px; }
+      .entry { grid-template-columns: 1fr; }
+    }
+    @media print {
+      @page { size: A4; margin: 14mm; }
+      body { padding: 0; font-size: 12px; }
+      .pdf { display: none; }
+      h1 { font-size: 36px; }
+      h2 { font-size: 18px; break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Full-stack Developer</h1>
+  <p class="tagline">Node.js · TypeScript · React · AWS</p>
+  <p class="pdf"><a href="index.pdf">Download PDF</a></p>
+
+  <h2>Work Experience</h2>
+
+  <div class="entry">
+    <div class="when">2019 – present</div>
+    <div>
+      <h3>Software consultancy</h3>
+      <p class="tech">Node.js, React, TypeScript, Firebase, AWS</p>
+      <p>Full-stack development of web applications and serverless APIs for clients.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2018 – 2019</div>
+    <div>
+      <h3>Global consulting firm</h3>
+      <p class="tech">TypeScript, ReasonML, React, PostgreSQL</p>
+      <p>Part of the team responsible for common services used by internal analytics solutions.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2015 – 2018</div>
+    <div>
+      <h3>Software consultancy</h3>
+      <p class="tech">Node.js, MongoDB, AWS, Docker Swarm, Java, Apache Camel</p>
+      <p>Started as a consultant implementing custom integrations of a pricing software product, then moved into a newly created mobile-apps team building applications on a React Native – GraphQL – Node.js – MongoDB stack. Ran continuous deployment on Docker Cloud, later migrated to a self-managed Docker Swarm cluster on EC2.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2015</div>
+    <div>
+      <h3>Mobile app agency</h3>
+      <p class="tech">Ember.js, Backbone.js</p>
+      <p>Frontend developer, mainly building interactive promo pages for mobile applications.</p>
+    </div>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="entry">
+    <div class="when">4 months</div>
+    <div>
+      <h3>Investment round platform</h3>
+      <p>Web application for companies to raise money via public investment rounds.</p>
+      <ul>
+        <li>Firebase (Auth, Firestore, Functions)</li>
+        <li>React, RxJS, Material UI</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">12 months</div>
+    <div>
+      <h3>Corporate travel booking API</h3>
+      <p>Serverless API for a corporate booking tool, documented in Postman.</p>
+      <ul>
+        <li>Serverless framework, TypeScript</li>
+        <li>AWS API Gateway, DynamoDB, Step Functions</li>
+        <li>Postman documentation</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">4 months</div>
+    <div>
+      <h3>Marketplace expansion tool</h3>
+      <p>MVP letting online-store owners import Google Product Feed or Shopify products and list them across selected Amazon Marketplaces.</p>
+      <ul>
+        <li>Node.js Stream API</li>
+        <li>Amazon MWS API, Shopify GraphQL API</li>
+        <li>CircleCI, Ava.js, Dependabot, Codecov</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">14 months</div>
+    <div>
+      <h3>Employee idea-collection app</h3>
+      <p>Mobile app that engages employees and collects ideas within a company. Built the backend and an admin interface for team leaders with activity overviews, leaderboards and latest ideas.</p>
+      <ul>
+        <li>MongoDB optimization and indexing</li>
+        <li>Redis queue (Bull)</li>
+        <li>Docker Swarm, AWS EC2, VPC, CloudWatch</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">12 months</div>
+    <div>
+      <h3>Mobile ordering &amp; payment app</h3>
+      <p>Mobile waiter app for ordering and paying at venues, plus a manager web UI for menu management and card payment gateway integration.</p>
+      <ul>
+        <li>React Native, GraphQL, Koa.js</li>
+        <li>JWT authorization</li>
+        <li>Mocha + Chai, Travis CI</li>
+        <li>AWS S3, Route 53</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Education</h2>
+
+  <div class="entry">
+    <div class="when">2012 – 2015</div>
+    <div>
+      <h3>Master's degree – Computer Science</h3>
+      <p>Specialization in Computer Vision</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2009 – 2012</div>
+    <div>
+      <h3>Bachelor's degree – Computer Science</h3>
+      <p>Minor: Software Development</p>
+    </div>
+  </div>
+
+  <h2>Misc</h2>
+
+  <div class="entry">
+    <div class="when">Languages</div>
+    <div><p>English, German</p></div>
+  </div>
+
+  <div class="entry">
+    <div class="when">Values</div>
+    <div>
+      <ul class="values">
+        <li>Human dignity first.</li>
+        <li>Don't stagnate; learn and explore new ways.</li>
+        <li>Don't waste time blaming — find the root cause, fix it, learn from it.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
